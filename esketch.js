@@ -1,5 +1,13 @@
 function color(e) {
-    e.target.classList.add('colored');
+    let r = Math.floor(Math.random() * 256);
+    console.log(r);
+    let g = Math.floor(Math.random() * 256);
+    console.log(g);
+    let b = Math.floor(Math.random() * 256);
+    console.log(b);
+    e.target.style.background = `rgb(${r}, ${g}, ${b})`;
+
+    // e.target.classList.add('colored');
 }
 
 function renderGrid() {
